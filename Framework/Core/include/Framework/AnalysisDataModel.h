@@ -1860,7 +1860,7 @@ using McCollisionLabel = McCollisionLabels::iterator;
 namespace hepmcxsection
 {
 DECLARE_SOA_INDEX_COLUMN(McCollision, mcCollision);    //! MC collision index
-DECLARE_SOA_COLUMN(GeneratorsID, generatorsID, short); //!
+DECLARE_SOA_COLUMN(GeneratorsID, generatorsIDXsection, short); //!
 DECLARE_SOA_COLUMN(Accepted, accepted, uint64_t);      //! The number of events generated so far
 DECLARE_SOA_COLUMN(Attempted, attempted, uint64_t);    //! The number of events attempted so far
 DECLARE_SOA_COLUMN(XsectGen, xsectGen, float);         //! Cross section in pb
@@ -1879,7 +1879,7 @@ using HepMCXSection = HepMCXSections::iterator;
 namespace hepmcpdfinfo
 {
 DECLARE_SOA_INDEX_COLUMN(McCollision, mcCollision);    //! MC collision index
-DECLARE_SOA_COLUMN(GeneratorsID, generatorsID, short); //!
+DECLARE_SOA_COLUMN(GeneratorsID, generatorsIDPDF, short); //!
 DECLARE_SOA_COLUMN(Id1, id1, int);                     //! flavour code of first parton
 DECLARE_SOA_COLUMN(Id2, id2, int);                     //! flavour code of second parton
 DECLARE_SOA_COLUMN(PdfId1, pdfId1, int);               //! LHAPDF set id of first parton
@@ -1902,7 +1902,7 @@ using HepMCPdfInfo = HepMCPdfInfos::iterator;
 namespace hepmcheavyion
 {
 DECLARE_SOA_INDEX_COLUMN(McCollision, mcCollision);                              //! MC collision index
-DECLARE_SOA_COLUMN(GeneratorsID, generatorsID, short);                           //!
+DECLARE_SOA_COLUMN(GeneratorsID, generatorsIDHI, short);                           //!
 DECLARE_SOA_COLUMN(NcollHard, ncollHard, int);                                   //! Number of hard scatterings
 DECLARE_SOA_COLUMN(NpartProj, npartProj, int);                                   //! Number of projectile participants
 DECLARE_SOA_COLUMN(NpartTarg, npartTarg, int);                                   //! Number of target participants
